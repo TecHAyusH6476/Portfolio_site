@@ -72,7 +72,7 @@ function SkillsSection() {
 
   const finalSkillRow = [];
 
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < skills.length / 4; i++) {
     let skillRow = skills.slice(i * 4, (i + 1) * 4);
     finalSkillRow.push(
       <div key={uuid()} className="d-flex justify-content-around py-3">

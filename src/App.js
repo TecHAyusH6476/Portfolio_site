@@ -7,12 +7,14 @@ import Footer from "./components/Footer";
 import ProjectSection from "./components/ProjectSection";
 import BlogSection from "./components/BlogSection";
 import SkillsSection from "./components/SkillsSection";
+import RecommendationSection from "./components/RecommendationSection";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Title name="Manikumar Perla" leadText="I am a freelancer from India" />
+      <RecommendationSection />
       <SkillsSection />
       <ProjectSection />
       <About />
