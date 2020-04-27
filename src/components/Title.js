@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Manikumar from "../assets/manikumar-perla.jpg";
 
 function Title(props) {
@@ -24,5 +25,14 @@ function Title(props) {
     </div>
   );
 }
+
+Title.defaultProps = {
+  name: "Manikumar P",
+  leadText: "I'm a freelancer from India",
+};
+
+Title.propTypes = {
+  name: PropTypes.string.isRequired,
+};
 
 export default Title;
