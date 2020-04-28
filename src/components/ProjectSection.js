@@ -42,7 +42,7 @@ function ProjectSection() {
         <a href="/" className="text-dark text-right">
           <h5>
             See my projects
-            <i className="fas fa-arrow-right align-middle"></i>
+            <i className="fas fa-arrow-right align-middle pl-1"></i>
           </h5>
         </a>
       </div>
