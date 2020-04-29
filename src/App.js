@@ -9,20 +9,34 @@ import BlogSection from "./components/BlogSection";
 import SkillsSection from "./components/SkillsSection";
 import RecommendationSection from "./components/RecommendationSection";
 import Contact from "./components/Contact";
+import WriteRecommendation from "./components/WriteRecommendation";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <Title name="Manikumar Perla" leadText="I am a freelancer from India" />
-      <RecommendationSection />
-      <SkillsSection />
-      <ProjectSection />
-      <About />
-      <BlogSection />
-      <Contact />
+      <Switch>
+        <Route exact path="/">
+          <Title
+            name="Manikumar Perla"
+            leadText="I am a freelancer from India"
+          />
+          <RecommendationSection />
+          <SkillsSection />
+          <ProjectSection />
+          <About />
+          <BlogSection />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+        <Route exact path="/write-a-recommendation">
+          <WriteRecommendation />
+        </Route>
+      </Switch>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
