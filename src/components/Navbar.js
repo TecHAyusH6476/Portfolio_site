@@ -1,15 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-md fixed-top bg-white">
       <div className="container my-2">
-        <a href="/" className="navbar-brand text-dark font-weight-bold">
+        <Link to="/" className="navbar-brand text-dark font-weight-bold">
           Manikumar Perla
-        </a>
-        <button className="btn btn-outline-info ml-auto mx-3">
-          Contact me
-        </button>
+        </Link>
+        <Link to="/contact" className="ml-auto mx-3">
+          <button className="btn btn-outline-info">Contact me</button>
+        </Link>
+
         <button
           className="navbar-toggler"
           data-toggle="collapse"
