@@ -7,6 +7,7 @@ import WriteRecommendation from "./components/WriteRecommendation";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage";
 import HomePage from "./components/HomePage";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           component={WriteRecommendation}
         />
         <Route exact path="/project/:id" component={ProjectPage} />
+        <Route component={NotFound} />
       </Switch>
       <Footer />
     </BrowserRouter>
