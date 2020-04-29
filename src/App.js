@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage";
 import HomePage from "./components/HomePage";
 import NotFound from "./components/NotFound";
+import BlogPage from "./components/BlogPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           component={WriteRecommendation}
         />
         <Route exact path="/project/:id" component={ProjectPage} />
+        <Route exact path="/blog/:id" component={BlogPage} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
