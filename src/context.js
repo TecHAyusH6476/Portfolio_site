@@ -3,7 +3,64 @@ import React, { Component } from "react";
 const Context = React.createContext();
 
 export class Provider extends Component {
+  handler = (action, newObject) => {
+    switch (action) {
+      case "ADD_PROJECT":
+        this.setState({
+          projects: [newObject, ...this.state.projects],
+        });
+        break;
+
+      case "ADD_BLOG":
+        this.setState({
+          blogs: [newObject, ...this.state.blogs],
+        });
+        break;
+
+      case "ADD_RECOMMENDATION":
+        this.setState({
+          recommendations: [newObject, ...this.state.recommendations],
+        });
+        break;
+    }
+  };
+
   state = {
+    handler: this.handler,
+    projects: [
+      {
+        id: 1,
+        title: "Project 1",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
+        excerpt: "This is my project about...",
+        body: "Body 1",
+      },
+      {
+        id: 2,
+        title: "Project 2",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
+        excerpt: "This is my project about...",
+        body: "Body 2",
+      },
+      {
+        id: 3,
+        title: "Project 3",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
+        excerpt: "This is my project about...",
+        body: "Body 4",
+      },
+      {
+        id: 4,
+        title: "Project 4",
+        imageUrl:
+          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
+        excerpt: "This is my project about...",
+        body: "Body 4",
+      },
+    ],
     blogs: [
       {
         id: 1,
@@ -121,36 +178,6 @@ export class Provider extends Component {
           "https://storage.googleapis.com/unschool-portfolio-website/flask.png",
         starsTotal: 3,
         starsActive: 2,
-      },
-    ],
-    projects: [
-      {
-        id: 1,
-        title: "Project 1",
-        imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
-        excerpt: "This is my project about...",
-      },
-      {
-        id: 2,
-        title: "Project 2",
-        imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
-        excerpt: "This is my project about...",
-      },
-      {
-        id: 3,
-        title: "Project 3",
-        imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
-        excerpt: "This is my project about...",
-      },
-      {
-        id: 4,
-        title: "Project 4",
-        imageUrl:
-          "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
-        excerpt: "This is my project about...",
       },
     ],
   };

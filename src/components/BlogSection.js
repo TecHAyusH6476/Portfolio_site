@@ -17,7 +17,7 @@ function BlogSection() {
               I share my views on technologies in these blogs
             </div>
             <div className="row my-5 pt-3">
-              {blogs.map((blog) => (
+              {blogs.slice(0, 3).map((blog) => (
                 <div key={blog.id} className="col-12 col-md-4 my-2">
                   <BlogCard blog={blog} />
                 </div>
