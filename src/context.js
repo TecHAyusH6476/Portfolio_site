@@ -50,7 +50,7 @@ export class Provider extends Component {
         imageUrl:
           "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
         excerpt: "This is my project about...",
-        body: "Body 4",
+        body: "Body 3",
       },
       {
         id: 4,
@@ -68,6 +68,7 @@ export class Provider extends Component {
         imageUrl:
           "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-1.jpg",
         excerpt: "This is my blog about...",
+        body: "Body 1",
       },
       {
         id: 2,
@@ -75,6 +76,7 @@ export class Provider extends Component {
         imageUrl:
           "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-2.jpg",
         excerpt: "This is my blog about...",
+        body: "Body 2",
       },
       {
         id: 3,
@@ -82,6 +84,7 @@ export class Provider extends Component {
         imageUrl:
           "https://storage.googleapis.com/unschool-portfolio-website/free-stock-image-3.jpg",
         excerpt: "This is my blog about...",
+        body: "Body 3",
       },
     ],
     recommendations: [
