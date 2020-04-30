@@ -10,6 +10,7 @@ import HomePage from "./components/HomePage";
 import NotFound from "./components/NotFound";
 import BlogPage from "./components/BlogPage";
 import AddProject from "./components/AddProject";
+import AddBlog from "./components/AddBlog";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           component={WriteRecommendation}
         />
         <Route exact path="/project/add" component={AddProject} />
+        <Route exact path="/blog/add" component={AddBlog} />
         <Route exact path="/project/:id" component={ProjectPage} />
         <Route exact path="/blog/:id" component={BlogPage} />
         <Route component={NotFound} />
