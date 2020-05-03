@@ -14,11 +14,13 @@ import AddBlog from "./components/AddBlog";
 import { Provider } from "./context";
 import AllProjects from "./components/AllProjects";
 import AllBlogs from "./components/AllBlogs";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Provider>
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Switch>
           <Route exact path="/" component={HomePage} />
