@@ -15,6 +15,7 @@ import { Provider } from "./context";
 import AllProjects from "./components/AllProjects";
 import AllBlogs from "./components/AllBlogs";
 import ScrollToTop from "./components/ScrollToTop";
+import Test from "./components/Test";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route exact path="/blog/add" component={AddBlog} />
           <Route exact path="/project/:id" component={ProjectPage} />
           <Route exact path="/blog/:id" component={BlogPage} />
+          <Route exact path="/test" component={Test} />
           <Route component={NotFound} />
         </Switch>
         <Footer />
