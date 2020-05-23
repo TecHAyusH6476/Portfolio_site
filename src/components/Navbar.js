@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-md fixed-top bg-white">
       <div className="container my-2">
         <Link to="/" className="navbar-brand text-dark font-weight-bold">
-          Manikumar Perla
+          NAME
         </Link>
         <Link to="/contact" className="ml-auto mx-3">
           <button className="btn btn-outline-info">Contact me</button>
@@ -22,12 +22,18 @@ function Navbar() {
 
         <div className="collapse navbar-collapse flex-grow-0" id="collapseNav">
           <div className="navbar-nav">
-            <a href="/" className="nav-item nav-link text-dark h6 mx-1 my-auto">
+            <Link
+              to="/allprojects"
+              className="nav-item nav-link text-dark h6 mx-1 my-auto"
+            >
               Projects
-            </a>
-            <a href="/" className="nav-item nav-link text-dark h6 mx-1 my-auto">
+            </Link>
+            <Link
+              to="/allblogs"
+              className="nav-item nav-link text-dark h6 mx-1 my-auto"
+            >
               Blogs
-            </a>
+            </Link>
           </div>
         </div>
       </div>

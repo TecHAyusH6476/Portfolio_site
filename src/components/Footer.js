@@ -19,13 +19,13 @@ function Footer() {
         <div className="row">
           <div className="col-12 col-md-4 py-3">
             <h5 className="text-info pb-3">More links</h5>
-            <a href="/" className="text-light d-block">
+            <a href="/allblogs" className="text-light d-block">
               Blogs
             </a>
             <Link to="/" className="text-light d-block">
               Home
             </Link>
-            <a href="/" className="text-light d-block">
+            <a href="/allprojects" className="text-light d-block">
               Projects
             </a>
             <Link to="/contact" className="text-light d-block">
@@ -50,15 +50,15 @@ function Footer() {
           </div>
           <div className="col-12 col-md-4 py-3">
             <h5 className="text-info pb-3">Social</h5>
-            <a href="/">
+            <Link to="/">
               <i className="fab fa-linkedin text-light h1 d-block"></i>
-            </a>
-            <a href="/">
+            </Link>
+            <Link to="/">
               <i className="fab fa-github text-light h1 d-block"></i>
-            </a>
-            <a href="/">
+            </Link>
+            <Link to="/">
               <i className="fas fa-envelope text-light h1 d-block"></i>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="text-muted py-3">

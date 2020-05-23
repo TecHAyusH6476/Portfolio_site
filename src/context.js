@@ -22,6 +22,9 @@ export class Provider extends Component {
           recommendations: [newObject, ...this.state.recommendations],
         });
         break;
+
+      default:
+        break;
     }
   };
 
